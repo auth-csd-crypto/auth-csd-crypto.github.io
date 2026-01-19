@@ -49,8 +49,9 @@ footer {
   align-items: center;
   gap: 60px;      /* αυτό είναι το κενό ανάμεσα στις 2 εικόνες */
 }
-.logo { height:60px; width:auto; display:block; }
-.logo2 { height:60px; width:auto; display:block; }
+.logo { height:47px; width:auto; display:block; }
+.logo2 { height:55px; width:auto; display:block; }
+.logo3 { height:120px; width:auto; display:block; }
 
 
 .tabs {
