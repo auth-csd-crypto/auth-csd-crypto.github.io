@@ -8,7 +8,7 @@ title: Home
 
 ## About
 
-Cryptography research group of CS department of Aristotle Unioveristy of Thessaloniki.
+Cryptography research group of CS department of Aristotle University of Thessaloniki.
 
 This site collects information about our research activities in cryptography and information security, including publications, group members, and project updates.
 
