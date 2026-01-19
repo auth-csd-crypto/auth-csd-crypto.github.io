@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>{{ page.title }}</title>
+    <link rel="stylesheet" href="{{ '/css/style.css' | relative_url }}">   
+    <link rel="stylesheet" href="{{ '/css/syntax.css' | relative_url }}"> 
+
+<script>
+  window.MathJax = {
+    tex: {
+      inlineMath: [['\\(', '\\)'], ['$', '$']],
+      displayMath: [['\\[', '\\]'], ['$$', '$$']],
+      processEscapes: true
+    }
+  };
+
+   <!-- gs -->
+</script><script defer src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/3.2.2/es5/tex-mml-chtml.js"></script>
+  <script defer src="{{ '/assets/js/fontsize.js' | relative_url }}"></script>
+
+  <body>
+    <header class="topbar">
+     <div class="brand" href="{{ '/' | relative_url }}">
+      <a href="https://www.auth.gr/en/homepage/" target="_blank" rel="noopener">
+        <img class="logo" src="{{ '/images/logo-csd-en.png' | relative_url }}" alt="Logo">
+      </a>
+      <a href="https://www.auth.gr/en/homepage/" target="_blank" rel="noopener">
+        <img class='logo2' src="{{ '/images/Auth_Logo-Motto@300px_blue_2_eng.png' | relative_url }}" alt="Logo2">
+      </a>
+        <span class="font-controls" aria-label="Font size controls">
+    <button type="button" id="font-dec" class="font-btn" aria-label="Decrease font size">−</button>
+    <button type="button" id="font-inc" class="font-btn" aria-label="Increase font size">+</button>
+  </span>
+    </div>
+      </header>
+  
+    <nav class="tabs">
+      <a href="{{ '/' | relative_url }}" class="tab {% if page.url == '/' %}active{% endif %}">Home</a>
+       <a href="{{ '/people/' | relative_url }}" class="tab {% if page.url contains '/people/' %}active{% endif %}">People</a>
+      <a href="{{ '/publication/' | relative_url }}" class="tab {% if page.url contains '/publication/' %}active{% endif %}">Publications</a>
+      <a href="{{ '/blog/' | relative_url }}" class="tab {% if page.url contains '/blog/' %}active{% endif %}">Blog</a>
+      <a href="{{ '/eu/' | relative_url }}" class="tab {% if page.url contains '/eu/' %}active{% endif %}">Projects</a>
+</nav>
+
+    <h1>{{ page.title }}</h1>
+    <section>
+      {{ content }}
+    </section>
+    <footer class="site-footer">
+      &copy; K.A.Draziotis.  Built with <a href="https://jekyllrb.com/" target="_blank" rel="noopener">Jekyll</a>
+  
+</footer>
+    </footer>
+  </body>
+</html>
+
+

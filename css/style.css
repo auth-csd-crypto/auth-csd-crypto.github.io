@@ -1,0 +1,88 @@
+html, body {
+  height: 100%;
+}
+
+.font-controls { display: inline-flex; gap: 6px; margin-left: 10px; }
+.font-btn {
+  border: 1px solid #ddd;
+  background: #fff;
+  border-radius: 8px;
+  padding: 2px 10px;
+  line-height: 1.6;
+  cursor: pointer;
+}
+.font-btn:hover { background: #f3f4f6; }  
+
+
+body {
+  background: #f5f5f5;   /* pick any color */
+  padding-left: 24px; 
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  margin: 0;              /* important: remove default body margin */
+}
+
+section {
+  flex: 1;                /* this makes the content area expand */
+}
+
+/* your footer styling (keep it small) */
+footer {
+  margin-top: auto;       /* pushes footer to the bottom */
+  padding: 7px 0;
+  border-top: 1px solid #ddd;
+  font-size: 1rem;
+  line-height: 2;
+}
+
+.topbar{
+  display:flex;
+  align-items:center;
+  gap:14px;
+  margin-bottom:16px;
+}
+
+
+.brand {
+  display: flex;
+  align-items: center;
+  gap: 60px;      /* αυτό είναι το κενό ανάμεσα στις 2 εικόνες */
+}
+.logo { height:60px; width:auto; display:block; }
+.logo2 { height:60px; width:auto; display:block; }
+
+
+.tabs {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+
+  padding: 20px 0;
+  margin-bottom: 24px;
+
+  border-bottom: 1px solid #ddd;
+}
+
+.tabs .tab {
+  text-decoration: none;
+
+  padding: 11px 15px;
+  border-radius: 999px;
+
+  border: 3px solid #ddd;
+  background: #f7f7f7;
+
+  transition: transform 120ms ease, box-shadow 120ms ease;
+}
+
+.tabs .tab:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 6px 14px rgba(0,0,0,0.10);
+}
+
+.tabs .tab.active {
+  background: #fff;
+  border-color: #bbb;
+  font-weight: 900;
+}
