@@ -7,5 +7,5 @@ If you’re interested in our annual CTF, please register using the form:
 
  - [Registration form](https://docs.google.com/forms/d/1nnVVljady6wbpNtDRWFrd7CUHItjsv-pFFQdOKRwcOY/)
 
-The candidate dates are 7 or 14 March.
+The candidate dates are ~~7 or~~ 14 March.
 
